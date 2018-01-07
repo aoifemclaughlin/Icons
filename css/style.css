@@ -1,0 +1,105 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+    margin: 0;
+}
+
+html {
+    background-color: #E6F6FF;
+    
+}
+h1 {
+    font-family: Berkshire Swash;
+}
+.home-container {
+    background-image: url(../images/header.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    height: 80vh;
+    width: auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.text {
+    text-align: center;
+    font-family: Lato;
+    color: #2E1B51;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.text a:hover {
+    text-decoration: none;
+    color: #46D5E1;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #BC2AAD;
+}
+
+.palace {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 3em;
+}
+
+.foot-container {
+    background-image: url(../images/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    height: 80vh;
+    width: auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -280px;
+}
+
+.download {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 4em;
+}
+
+.download-image:hover {
+    animation: pop .3s infinite alternate
+}
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+
+
+
